@@ -17,7 +17,7 @@ namespace KL
         public Form1()
         {
             InitializeComponent();
-            ToolStripMenuItemFolder.CreateTree(contextMenuStrip1, $@"{Application.StartupPath}\MenuItems");
+            ToolStripMenuItemFolder.CreateTree(contextMenuStrip1, Program.MenuItemDir);
             
             
         }

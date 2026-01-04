@@ -70,6 +70,7 @@ namespace KL
         private static ToolStripMenuItem[] getChildFiiles(string fullPath)
         {
             return Directory.GetFiles(fullPath)
+                    .Where(f => !f.StartsWith(".gitkeep"))
                     .Select(d => {
                         if (d.EndsWith(".lnk"))
                         {

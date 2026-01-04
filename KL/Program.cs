@@ -26,7 +26,7 @@ namespace KL
 
         private static void checkfolder()
         {
-            string dir = Path.GetDirectoryName(Application.ExecutablePath);
+            string dir = Application.StartupPath;
             MenuItemDir = Path.Combine(dir, "MenuItems");
             if (!Directory.Exists(MenuItemDir))
                 Directory.CreateDirectory(MenuItemDir);

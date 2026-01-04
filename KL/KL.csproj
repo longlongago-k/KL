@@ -84,9 +84,6 @@
     <EmbeddedResource Include="ToolStripMenuItemFolder.resx">
       <DependentUpon>ToolStripMenuItemFolder.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="MenuItems\data - ショートカット.lnk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="kl_app.ico" />
+    <Content Include="MenuItems\.gitkeep" />
     <Content Include="Resources\kl.svg" />
     <Content Include="Resources\kl_16.ico" />
     <Content Include="Resources\kl_16.png" />
@@ -118,5 +116,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
